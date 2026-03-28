@@ -889,7 +889,7 @@
           <p>We'll reach out before launch. Early adopters get 50% off for life.</p>
         </div>
 
-        <form id="waitlistForm">
+        <form id="waitlistForm" action="https://formspree.io/f/xwvwvdrw" method="POST">
           <div class="field">
             <label for="email">Email address *</label>
             <input type="email" id="email" name="email" required placeholder="you@example.com">
@@ -941,6 +941,8 @@
             <textarea id="biggestPain" name="biggestPain" required placeholder="What problem would you most want Dora to solve?"></textarea>
           </div>
 
+          <input type="hidden" name="_next" value="https://dora-ai-landing.vercel.app/?submitted=true">
+
           <button type="submit" class="submit-btn" id="submitBtn">Join the waitlist →</button>
           <p class="form-footer">No spam. Just updates when we launch.</p>
         </form>
@@ -953,36 +955,5 @@
     <p><strong>Dora.ai</strong> · Built for curious travelers · <a href="mailto:hello.dora.ai@gmail.com" style="color:rgba(245,240,232,0.5);">hello.dora.ai@gmail.com</a></p>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    document.getElementById('waitlistForm').addEventListener('submit', async function(e) {
-      e.preventDefault();
-
-      const btn = document.getElementById('submitBtn');
-      btn.disabled = true;
-      btn.textContent = 'Submitting…';
-
-      const willingToPay = document.querySelector('input[name="willingToPay"]:checked');
-
-      const formData = {
-        email: document.getElementById('email').value,
-        travelFrequency: document.getElementById('travelFrequency').value,
-        travelStyle: document.getElementById('travelStyle').value,
-        willingToPay: willingToPay ? willingToPay.value : 'Not answered',
-        biggestPain: document.getElementById('biggestPain').value,
-      };
-
-      try {
-        const response = await fetch('https://formspree.io/f/xwvwvdrw', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify(formData)
-        });
-
-        if (response.ok) {
-          document.getElementById('waitlistForm').style.display = 'none';
-          const successBox = document.getElementById('successBox');
-          successBox.style.display = 'block';
-          successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else {
-          throw new Error('Failed');
-      
+</body>
+</html>
