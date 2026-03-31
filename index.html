@@ -20,11 +20,8 @@
       --terra: #C4541A;
       --terra-light: #E8784A;
       --terra-pale: #FAE8DE;
-      --sky: #2B6CB0;
-      --sky-pale: #EBF4FF;
       --leaf: #2D6A4F;
       --leaf-pale: #E8F5EE;
-      --accent: #C4541A;
     }
 
     html { scroll-behavior: smooth; }
@@ -37,7 +34,6 @@
       overflow-x: hidden;
     }
 
-    /* NAV */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -56,7 +52,6 @@
       font-weight: 700;
       font-size: 1.25rem;
       color: var(--ink);
-      letter-spacing: 0px;
     }
 
     .nav-logo span { color: var(--terra); }
@@ -74,7 +69,6 @@
 
     .nav-cta:hover { background: var(--terra); }
 
-    /* HERO */
     .hero {
       min-height: 100vh;
       display: flex;
@@ -90,17 +84,6 @@
       background:
         radial-gradient(ellipse 60% 50% at 80% 50%, rgba(196,84,26,0.08) 0%, transparent 70%),
         radial-gradient(ellipse 40% 60% at 10% 80%, rgba(43,108,176,0.06) 0%, transparent 60%);
-      pointer-events: none;
-    }
-
-    .hero-map-decoration {
-      position: absolute;
-      right: -60px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 520px;
-      height: 520px;
-      opacity: 0.07;
       pointer-events: none;
     }
 
@@ -149,10 +132,7 @@
       margin-bottom: 24px;
     }
 
-    h1 em {
-      font-style: normal;
-      color: var(--terra);
-    }
+    h1 em { font-style: normal; color: var(--terra); }
 
     .hero-sub {
       font-size: 1.125rem;
@@ -163,12 +143,7 @@
       max-width: 440px;
     }
 
-    .hero-actions {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+    .hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
 
     .btn-primary {
       background: var(--terra);
@@ -182,22 +157,11 @@
       display: inline-block;
     }
 
-    .btn-primary:hover {
-      background: #a84415;
-      transform: translateY(-1px);
-    }
+    .btn-primary:hover { background: #a84415; transform: translateY(-1px); }
 
-    .hero-note {
-      font-size: 0.875rem;
-      color: var(--ink-muted);
-    }
+    .hero-note { font-size: 0.875rem; color: var(--ink-muted); }
 
-    /* PHONE MOCKUP */
-    .phone-wrap {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    .phone-wrap { display: flex; justify-content: center; align-items: center; }
 
     .phone {
       width: 280px;
@@ -205,7 +169,6 @@
       border-radius: 36px;
       padding: 16px;
       box-shadow: 0 40px 80px rgba(26,22,18,0.25), 0 0 0 1px rgba(255,255,255,0.05);
-      position: relative;
     }
 
     .phone-notch {
@@ -276,11 +239,7 @@
       margin-bottom: 6px;
     }
 
-    .phone-bubble-text {
-      font-size: 12px;
-      color: rgba(255,255,255,0.9);
-      line-height: 1.5;
-    }
+    .phone-bubble-text { font-size: 12px; color: rgba(255,255,255,0.9); line-height: 1.5; }
 
     .phone-wave {
       position: absolute;
@@ -292,11 +251,7 @@
       gap: 10px;
     }
 
-    .wave-bars {
-      display: flex;
-      gap: 3px;
-      align-items: center;
-    }
+    .wave-bars { display: flex; gap: 3px; align-items: center; }
 
     .wave-bar {
       width: 3px;
@@ -316,18 +271,10 @@
       50% { transform: scaleY(0.4); }
     }
 
-    .wave-label {
-      font-size: 10px;
-      color: rgba(255,255,255,0.5);
-    }
+    .wave-label { font-size: 10px; color: rgba(255,255,255,0.5); }
 
-    /* SECTION SHARED */
     section { padding: 100px 40px; }
-
-    .section-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
 
     .section-eyebrow {
       font-family: 'DM Sans', sans-serif;
@@ -350,11 +297,8 @@
       margin-bottom: 20px;
     }
 
-    /* PROBLEM */
     .problem { background: var(--ink); color: var(--sand); }
-
     .problem h2 { color: var(--sand); }
-
     .problem .section-eyebrow { color: var(--terra-light); }
 
     .problem-lead {
@@ -366,11 +310,7 @@
       line-height: 1.7;
     }
 
-    .friction-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2px;
-    }
+    .friction-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; }
 
     .friction-item {
       background: rgba(255,255,255,0.04);
@@ -392,20 +332,9 @@
       text-transform: uppercase;
     }
 
-    .friction-problem {
-      font-size: 1rem;
-      color: rgba(245,240,232,0.85);
-      line-height: 1.5;
-    }
+    .friction-problem { font-size: 1rem; color: rgba(245,240,232,0.85); line-height: 1.5; }
+    .friction-x { display: inline-block; color: #E24B4A; font-weight: 600; margin-right: 6px; }
 
-    .friction-x {
-      display: inline-block;
-      color: #E24B4A;
-      font-weight: 600;
-      margin-right: 6px;
-    }
-
-    /* HOW IT WORKS */
     .how { background: var(--sand); }
 
     .how-lead {
@@ -417,18 +346,13 @@
       line-height: 1.7;
     }
 
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 32px;
-    }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
 
     .step {
       padding: 32px;
       background: white;
       border-radius: 20px;
       border: 1px solid rgba(26,22,18,0.08);
-      position: relative;
     }
 
     .step-num {
@@ -449,13 +373,8 @@
       margin-bottom: 12px;
     }
 
-    .step-desc {
-      font-size: 0.9rem;
-      color: var(--ink-muted);
-      line-height: 1.6;
-    }
+    .step-desc { font-size: 0.9rem; color: var(--ink-muted); line-height: 1.6; }
 
-    /* PRICING */
     .pricing { background: var(--terra-pale); }
 
     .pricing-inner {
@@ -468,19 +387,24 @@
     }
 
     .pricing-left h2 { margin-bottom: 16px; }
-
-    .pricing-left p {
-      font-size: 1.05rem;
-      color: var(--ink-soft);
-      font-weight: 300;
-      line-height: 1.7;
-    }
+    .pricing-left p { font-size: 1.05rem; color: var(--ink-soft); font-weight: 300; line-height: 1.7; }
 
     .pricing-card {
       background: white;
       border-radius: 24px;
       padding: 40px;
       border: 1px solid rgba(196,84,26,0.15);
+    }
+
+    .price-badge {
+      display: inline-block;
+      background: var(--terra-pale);
+      color: var(--terra);
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 20px;
     }
 
     .price-tag {
@@ -500,17 +424,9 @@
       letter-spacing: 0;
     }
 
-    .price-period {
-      font-size: 0.875rem;
-      color: var(--ink-muted);
-      margin-top: 4px;
-      margin-bottom: 28px;
-    }
+    .price-period { font-size: 0.875rem; color: var(--ink-muted); margin-top: 4px; margin-bottom: 28px; }
 
-    .price-features {
-      list-style: none;
-      margin-bottom: 32px;
-    }
+    .price-features { list-style: none; margin-bottom: 32px; }
 
     .price-features li {
       padding: 10px 0;
@@ -534,20 +450,7 @@
       background-position: center;
     }
 
-    .price-badge {
-      display: inline-block;
-      background: var(--terra-pale);
-      color: var(--terra);
-      font-size: 0.78rem;
-      font-weight: 500;
-      padding: 4px 12px;
-      border-radius: 100px;
-      margin-bottom: 20px;
-    }
-
-    /* FORM */
     .form-section { background: white; }
-
     .form-section h2 { margin-bottom: 12px; }
 
     .form-lead {
@@ -568,19 +471,9 @@
       align-items: start;
     }
 
-    .form-left {}
-
-    .form-right {}
-
     form { display: flex; flex-direction: column; gap: 20px; }
-
     .field { display: flex; flex-direction: column; gap: 8px; }
-
-    label {
-      font-size: 0.875rem;
-      font-weight: 500;
-      color: var(--ink);
-    }
+    label { font-size: 0.875rem; font-weight: 500; color: var(--ink); }
 
     input[type="email"],
     input[type="text"],
@@ -605,19 +498,8 @@
     }
 
     textarea { resize: vertical; min-height: 90px; }
-
-    .radio-group {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .radio-pill {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      cursor: pointer;
-    }
+    .radio-group { display: flex; gap: 12px; flex-wrap: wrap; }
+    .radio-pill { display: flex; align-items: center; gap: 8px; cursor: pointer; }
 
     .radio-pill input[type="radio"] {
       width: 18px;
@@ -628,10 +510,7 @@
       cursor: pointer;
     }
 
-    .radio-pill span {
-      font-size: 0.9rem;
-      color: var(--ink-soft);
-    }
+    .radio-pill span { font-size: 0.9rem; color: var(--ink-soft); }
 
     .submit-btn {
       background: var(--terra);
@@ -647,21 +526,9 @@
       width: 100%;
     }
 
-    .submit-btn:hover:not(:disabled) {
-      background: #a84415;
-      transform: translateY(-1px);
-    }
+    .submit-btn:hover { background: #a84415; transform: translateY(-1px); }
 
-    .submit-btn:disabled {
-      background: #ccc;
-      cursor: not-allowed;
-    }
-
-    .form-footer {
-      font-size: 0.8rem;
-      color: var(--ink-muted);
-      text-align: center;
-    }
+    .form-footer { font-size: 0.8rem; color: var(--ink-muted); text-align: center; }
 
     .success-box {
       display: none;
@@ -680,10 +547,7 @@
       margin-bottom: 8px;
     }
 
-    .success-box p {
-      font-size: 0.95rem;
-      color: var(--ink-soft);
-    }
+    .success-box p { font-size: 0.95rem; color: var(--ink-soft); }
 
     .form-social-proof {
       padding: 32px;
@@ -700,20 +564,9 @@
       margin-bottom: 20px;
     }
 
-    .quote {
-      font-size: 0.95rem;
-      color: var(--ink-soft);
-      line-height: 1.6;
-      font-style: italic;
-      margin-bottom: 10px;
-    }
+    .quote { font-size: 0.95rem; color: var(--ink-soft); line-height: 1.6; font-style: italic; margin-bottom: 10px; }
+    .quote-attr { font-size: 0.8rem; color: var(--ink-muted); }
 
-    .quote-attr {
-      font-size: 0.8rem;
-      color: var(--ink-muted);
-    }
-
-    /* FOOTER */
     footer {
       background: var(--ink);
       color: rgba(245,240,232,0.5);
@@ -724,7 +577,6 @@
 
     footer strong { color: rgba(245,240,232,0.9); font-weight: 500; }
 
-    /* RESPONSIVE */
     @media (max-width: 768px) {
       nav { padding: 16px 20px; }
       section { padding: 70px 20px; }
@@ -744,13 +596,11 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
     <div class="nav-logo">Dora<span>.ai</span></div>
     <a href="#waitlist" class="nav-cta">Join the waitlist</a>
   </nav>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-inner">
@@ -768,12 +618,10 @@
           <div class="phone-notch"></div>
           <div class="phone-screen">
             <div class="phone-map"></div>
-            <div class="phone-location">
-              <div class="phone-pin"></div>
-            </div>
+            <div class="phone-location"><div class="phone-pin"></div></div>
             <div class="phone-bubble">
               <div class="phone-bubble-label">Dora · Live</div>
-              <div class="phone-bubble-text">"You're standing near the Panthéon — built in 1790, it became a mausoleum for French heroes. Victor Hugo and Marie Curie are buried here. Want to know what's worth seeing inside?"</div>
+              <div class="phone-bubble-text">"You're standing near the Pantheon — built in 1790, it became a mausoleum for French heroes. Victor Hugo and Marie Curie are buried here. Want to know what's worth seeing inside?"</div>
             </div>
             <div class="phone-wave">
               <div class="wave-bars">
@@ -783,7 +631,7 @@
                 <div class="wave-bar"></div>
                 <div class="wave-bar"></div>
               </div>
-              <span class="wave-label">Listening…</span>
+              <span class="wave-label">Listening...</span>
             </div>
           </div>
         </div>
@@ -791,7 +639,6 @@
     </div>
   </section>
 
-  <!-- PROBLEM -->
   <section class="problem">
     <div class="section-inner">
       <div class="section-eyebrow">The problem</div>
@@ -800,25 +647,24 @@
       <div class="friction-grid">
         <div class="friction-item">
           <div class="friction-tool">ChatGPT / voice AI</div>
-          <div class="friction-problem"><span class="friction-x">✕</span>Helpful, but has no idea where you are — you have to narrate your location every few minutes</div>
+          <div class="friction-problem"><span class="friction-x">x</span>Helpful, but has no idea where you are — you have to narrate your location every few minutes</div>
         </div>
         <div class="friction-item">
           <div class="friction-tool">Google Maps</div>
-          <div class="friction-problem"><span class="friction-x">✕</span>Shows you where things are, but can't tell you anything about them or answer your questions</div>
+          <div class="friction-problem"><span class="friction-x">x</span>Shows you where things are, but can't tell you anything about them or answer your questions</div>
         </div>
         <div class="friction-item">
           <div class="friction-tool">Audio tour apps</div>
-          <div class="friction-problem"><span class="friction-x">✕</span>Pre-recorded, route-locked — if you go off-script or have a question, you're on your own</div>
+          <div class="friction-problem"><span class="friction-x">x</span>Pre-recorded, route-locked — if you go off-script or have a question, you're on your own</div>
         </div>
         <div class="friction-item">
           <div class="friction-tool">Guidebooks</div>
-          <div class="friction-problem"><span class="friction-x">✕</span>Great research, zero interactivity — can't ask a book "what's the best place to eat near here right now?"</div>
+          <div class="friction-problem"><span class="friction-x">x</span>Great research, zero interactivity — can't ask a book "what's the best place to eat near here right now?"</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
   <section class="how">
     <div class="section-inner">
       <div class="section-eyebrow">How it works</div>
@@ -844,7 +690,6 @@
     </div>
   </section>
 
-  <!-- PRICING -->
   <section class="pricing">
     <div class="pricing-inner">
       <div class="pricing-left">
@@ -858,7 +703,7 @@
         <div class="price-period">per month · cancel anytime</div>
         <ul class="price-features">
           <li>Unlimited cities worldwide</li>
-          <li>Unlimited questions & conversations</li>
+          <li>Unlimited questions and conversations</li>
           <li>Real-time location awareness</li>
           <li>Offline mode — download before you go</li>
           <li>Locked in at this price, forever</li>
@@ -868,14 +713,12 @@
     </div>
   </section>
 
-  <!-- FORM -->
   <section class="form-section" id="waitlist">
     <div class="form-inner">
       <div class="form-left">
         <div class="section-eyebrow">Early access</div>
         <h2>Be the first to explore with Dora</h2>
         <p class="form-lead">We're building this for travelers who want depth, not just directions. Join the waitlist and help shape what Dora becomes.</p>
-
         <div class="form-social-proof">
           <div class="social-proof-title">Why people want this</div>
           <p class="quote">"I tried using ChatGPT voice as a tour guide and it was actually great — but having to constantly tell it where I was got old fast. That's the one thing missing."</p>
@@ -889,12 +732,11 @@
           <p>We'll reach out before launch. Early adopters get 50% off for life.</p>
         </div>
 
-        <form id="waitlistForm" action="https://formspree.io/f/xwvwvdrw" method="POST">
+        <form id="waitlistForm" action="https://formspree.io/f/xwvwvdrw" method="POST" target="hidden-iframe">
           <div class="field">
             <label for="email">Email address *</label>
             <input type="email" id="email" name="email" required placeholder="you@example.com">
           </div>
-
           <div class="field">
             <label for="travelFrequency">How often do you travel? *</label>
             <select id="travelFrequency" name="travelFrequency" required>
@@ -905,7 +747,6 @@
               <option value="Once or twice a year">Once or twice a year</option>
             </select>
           </div>
-
           <div class="field">
             <label for="travelStyle">How do you usually travel? *</label>
             <select id="travelStyle" name="travelStyle" required>
@@ -917,7 +758,6 @@
               <option value="Business traveler">Business traveler</option>
             </select>
           </div>
-
           <div class="field">
             <label>Would you pay $7/month for this? *</label>
             <div class="radio-group">
@@ -935,25 +775,34 @@
               </label>
             </div>
           </div>
-
           <div class="field">
             <label for="biggestPain">What's your biggest frustration with current travel apps? *</label>
             <textarea id="biggestPain" name="biggestPain" required placeholder="What problem would you most want Dora to solve?"></textarea>
           </div>
-
-          <input type="hidden" name="_next" value="https://dora-ai-landing.vercel.app/?submitted=true">
-
-          <button type="submit" class="submit-btn" id="submitBtn">Join the waitlist →</button>
+          <button type="submit" class="submit-btn">Join the waitlist</button>
           <p class="form-footer">No spam. Just updates when we launch.</p>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <p><strong>Dora.ai</strong> · Built for curious travelers · <a href="mailto:hello.dora.ai@gmail.com" style="color:rgba(245,240,232,0.5);">hello.dora.ai@gmail.com</a></p>
   </footer>
+
+  <iframe name="hidden-iframe" style="display:none;"></iframe>
+
+  <script>
+    document.getElementById('waitlistForm').addEventListener('submit', function() {
+      setTimeout(function() {
+        document.getElementById('waitlistForm').reset();
+        document.getElementById('waitlistForm').style.display = 'none';
+        var box = document.getElementById('successBox');
+        box.style.display = 'block';
+        box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 800);
+    });
+  </script>
 
 </body>
 </html>
