@@ -786,14 +786,23 @@
     </div>
   </section>
 
-  <footer>
-    <p><strong>Dora.ai</strong> · Built for curious travelers · <a href="/cdn-cgi/l/email-protection#ed8588818182c389829f8cc38c84ad8a808c8481c38e8280" style="color:rgba(245,240,232,0.5);"><span class="__cf_email__" data-cfemail="7018151c1c1f5e141f02115e111930171d11191c5e131f1d">[email&#160;protected]</span></a></p>
+    <footer>
+    <p><strong>Dora.ai</strong> &middot; Built for curious travelers &middot; <a href="mailto:hello.dora.ai@gmail.com" style="color:rgba(245,240,232,0.5);">hello.dora.ai@gmail.com</a></p>
   </footer>
 
   <iframe name="hidden-iframe" style="display:none;"></iframe>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     document.getElementById('waitlistForm').addEventListener('submit', function() {
       setTimeout(function() {
         document.getElementById('waitlistForm').reset();
-        document.getElementById('wai
+        document.getElementById('waitlistForm').style.display = 'none';
+        var box = document.getElementById('successBox');
+        box.style.display = 'block';
+        box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 800);
+    });
+  </script>
+
+</body>
+</html>
